@@ -1,8 +1,20 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
+import TMDB from './TMDB'
+import FilmListing from './FilmListing';
+import FilmDetails from './FilmDetails';
+
+
+
 class App extends Component {
+  constructor(props) {
+    super()
+    this.state = ({
+
+    })
+  }
+
   render() {
     return (
       <div className="film-library">
