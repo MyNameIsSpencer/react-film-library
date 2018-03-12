@@ -10,21 +10,16 @@ import FilmDetails from './FilmDetails';
 class App extends Component {
   constructor(props) {
     super()
-    this.state = ({
-
-    })
+    this.state = {
+      films: TMDB.films
+    }
   }
 
   render() {
     return (
       <div className="film-library">
-        <div className="film-list">
-          <h1 className="section-title">FILMS</h1>
-        </div>
-
-        <div className="film-details">
-          <h1 className="section-title">DETAILS</h1>
-        </div>
+        <FilmListing films={this.state.films}/>
+        <FilmDetails films={this.state.films}/>
       </div>
     );
   }
