@@ -4,7 +4,7 @@ import './App.css';
 import TMDB from './TMDB'
 import FilmListing from './FilmListing';
 import FilmDetails from './FilmDetails';
-
+import Fave from './Fave.js';
 
 
 class App extends Component {
@@ -18,6 +18,7 @@ class App extends Component {
   render() {
     return (
       <div className="film-library">
+        <Fave/>
         <FilmListing films={this.state.films}/>
         <FilmDetails films={this.state.films}/>
       </div>

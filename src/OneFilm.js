@@ -12,7 +12,7 @@ class OneFilm extends Component {
   render() {
     console.log(this.state);
     return (
-      <div>
+      <div className="oneFilm">
         <img src={this.state.posterUrl} alt="Mooovai Purster"/>
         <h2> {this.props.film.title}</h2>
         <p> {this.state.year}</p>
