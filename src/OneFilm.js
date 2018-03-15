@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Fave from './Fave';
 
 class OneFilm extends Component {
   constructor(props){
@@ -16,7 +17,6 @@ class OneFilm extends Component {
         <img src={this.state.posterUrl} alt="Mooovai Purster"/>
         <h2> {this.props.film.title}</h2>
         <p> {this.state.year}</p>
-
       </div>
     )
   }
